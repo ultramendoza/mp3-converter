@@ -4,14 +4,10 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lichwa/mp3-server.git"
+    "url": "git+https://github.com/ultramendoza/mp3-server.git"
   },
   "author": "Lichwa",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lichwa/mp3-server/issues"
-  },
-  "homepage": "https://github.com/Lichwa/mp3-server#readme",
   "main": "build/index.js",
   "engines": {
     "node": "6.3.0"
