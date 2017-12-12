@@ -1,12 +1,12 @@
 {
-  "name": "mp3-server",
+  "name": "YouTube MP3 by Ultramendoza™",
   "version": "1.0.0",
   "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ultramendoza/mp3-server.git"
-  },
-  "author": "Lichwa",
+  // "repository": {
+  //   "type": "git",
+  //   "url": "git+https://github.com/ultramendoza/mp3-server.git"
+  // },
+  "author": "Ultramendoza",
   "license": "ISC",
   "main": "build/index.js",
   "engines": {
@@ -18,7 +18,7 @@
     "build": "webpack -p --config webpack.production.config.js",
     "start": "npm run build-server && npm run build && node ./build",
     "lint": "eslint src/*.js",
-    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build"
+    "postinstall": "chmod -R u+x node_modules/next/dist/bin"
   },
   "dependencies": {
     "async": "^1.5.2",
