@@ -17,7 +17,8 @@
     "build-server": "babel ./src --out-dir ./build --copy-files",
     "build": "webpack -p --config webpack.production.config.js",
     "start": "npm run build-server && npm run build && node ./build",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src/*.js",
+    "postinstall": "chmod -R +x node_modules/next/dist/bin/next-* && npm run build"
   },
   "dependencies": {
     "async": "^1.5.2",
