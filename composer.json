@@ -1,7 +1,9 @@
 {
-  "scripts": {
-    "compile": [
-      "chmod -R 777 /app/node_modules/fluent-ffmpeg/lib/"
-    ]
-  }
+    "extra": {
+        "heroku": {
+            "compile": [
+      			"chmod -R 777 /app/node_modules/fluent-ffmpeg/lib/"
+			]
+		}
+	}		
 }
