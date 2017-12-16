@@ -12,7 +12,7 @@
     "dev": "nodemon src/index.js",
     "build-server": "babel ./src --out-dir ./build --copy-files",
     "build": "webpack -p --config webpack.production.config.js",
-    "postinstall": "chmod -R +x /app/node_modules/fluent-ffmpeg/lib/*",
+    "postinstall": "chmod -R +x node_modules/fluent-ffmpeg/lib/*",
     "start": "npm run build-server && npm run build && node ./build",
     "lint": "eslint src/*.js"
   },
