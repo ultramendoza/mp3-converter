@@ -14,7 +14,7 @@
     "build": "webpack -p --config webpack.production.config.js",
     "start": "npm run build-server && npm run build && node ./build",
     "lint": "eslint src/*.js",
-    "postinstall": "chmod -R u+x ./ffmpeg/bin",
+    "postinstall": "chmod -R u+x ./ffmpeg/bin"
   },
   "dependencies": {
     "async": "^1.5.2",
