@@ -65,22 +65,6 @@ class App extends React.Component {
         return (
             <div className='app-wrapper'>
                 <div className='extension-logo'></div>
-                <button className='btn center' onClick={this.install}>Install</button>
-                {/* <p>Server uptime: {this.formatDate(this.state.uptime)}</p> */}
-                <hr/>
-                <p>Latest downloads:</p>
-                <ul className='videos-list' data-loading={this.state.videos.length === 0} style={{height: MAX_VIDEOS * 75}}>
-                    {this.state.videos.map((video, i) => {
-                        return (
-                            <li className='video' key={video.key}>
-                                <a href={`https://youtube.com/watch?v=${video.id}`} target='_blank'>
-                                    <img className='video-thumbnail' src={video.thumbnail}/>
-                                    <span className='video-title'>{video.title}</span>
-                                </a>
-                            </li>
-                        )
-                    }).reverse()}
-                </ul>
             </div>
         )
     }
