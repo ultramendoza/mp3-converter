@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js",
-    "build-server": "babel ./src --out-dir ./build --copy-files",
+    "build-server": "NODE_ENV=production babel ./src --out-dir ./build --copy-files",
     "build": "webpack -p --config webpack.production.config.js",
     "start": "npm run build-server && npm run build && node ./build",
     "lint": "eslint src/*.js",
